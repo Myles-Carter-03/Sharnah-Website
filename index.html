@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Paws Dog Walking</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1400&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #ff7b29;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #e76718;
+    }
+
+    section {
+        padding: 70px 10%;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #f9f9f9;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #ff7b29;
+    }
+
+    .about {
+        background: #f4f7fa;
+        text-align: center;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .testimonial {
+        background: white;
+        padding: 20px;
+        border-left: 5px solid #ff7b29;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .contact {
+        text-align: center;
+        background: #2c3e50;
+        color: white;
+    }
+
+    .contact a {
+        color: #ffb37b;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #1f2d3a;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Happy Paws Dog Walking</h1>
+        <p>Reliable, caring, and fun dog walking services for your best friend.</p>
+        <a href="#contact" class="btn">Book a Walk</a>
+    </div>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>30-Minute Walk</h3>
+            <p>Perfect for a quick exercise break and fresh air.</p>
+        </div>
+        <div class="card">
+            <h3>60-Minute Walk</h3>
+            <p>Extended adventure for energetic dogs.</p>
+        </div>
+        <div class="card">
+            <h3>Puppy Visits</h3>
+            <p>Potty breaks, playtime, and companionship.</p>
+        </div>
+        <div class="card">
+            <h3>Group Walks</h3>
+            <p>Social and fun walks with other friendly dogs.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        At Happy Paws Dog Walking, we treat every dog like family.
+        Our experienced walkers provide safe, enjoyable walks tailored
+        to your dog's needs and personality.
+    </p>
+</section>
+
+<section>
+    <h2>What Pet Owners Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"My dog gets so excited when Happy Paws arrives. Fantastic service!"</p>
+            <strong>- Sarah M.</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Reliable, professional, and genuinely caring. Highly recommended."</p>
+            <strong>- James T.</strong>
+        </div>
+        <div class="testimonial">
+            <p>"The daily updates and photos are wonderful. My dog loves every walk."</p>
+            <strong>- Emily R.</strong>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to schedule a walk?</p>
+    <p>Email: hello@happypaws.com</p>
+    <p>Phone: (555) 123-4567</p>
+    <p><a href="#">Request a Free Consultation</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Happy Paws Dog Walking. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
