@@ -132,6 +132,8 @@ padding:30px;
 border-radius:24px;
 box-shadow:0 15px 35px rgba(0,0,0,.08);
 transition:.3s;
+    width:100%;
+    text-align:center;
 }
 
 .feature:hover,
@@ -266,4 +268,56 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
+}
+
+/* Global content centering */
+section,
+.hero,
+footer,
+#about,
+#services,
+#pricing,
+#gallery,
+.testimonials,
+.map-section,
+#booking{
+    text-align:center;
+}
+
+.features,
+.cards,
+.pricing-grid,
+.testimonial-grid{
+    justify-items:center;
+}
+
+.feature,
+.card,
+.price-card,
+.testimonial{
+    text-align:center;
+}
+
+.booking-form{
+    margin:auto;
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form select{
+    text-align:center;
+}
+
+.logo{
+    justify-content:center;
+}
+
+nav ul{
+    justify-content:center;
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
