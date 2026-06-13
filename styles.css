@@ -80,6 +80,8 @@ font-weight:500;
     url("HeaderImage(1).jpg");
     background-size:cover;
     background-position:center;
+ width:100vw;
+    margin:0;
 }
 
 .glass-card{
