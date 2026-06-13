@@ -3,192 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Paws Dog Walking</title>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
+<title>Cora The Explorer's Adventures</title>
 
-    body {
-        color: #333;
-        line-height: 1.6;
-    }
+<link rel="stylesheet" href="styles.css">
 
-    header {
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                    url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1400&q=80');
-        background-size: cover;
-        background-position: center;
-        height: 90vh;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .btn {
-        display: inline-block;
-        background: #ff7b29;
-        color: white;
-        padding: 12px 24px;
-        text-decoration: none;
-        border-radius: 30px;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background: #e76718;
-    }
-
-    section {
-        padding: 70px 10%;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #2c3e50;
-    }
-
-    .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .card {
-        background: #f9f9f9;
-        padding: 25px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-        margin-bottom: 10px;
-        color: #ff7b29;
-    }
-
-    .about {
-        background: #f4f7fa;
-        text-align: center;
-    }
-
-    .testimonials {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-    .testimonial {
-        background: white;
-        padding: 20px;
-        border-left: 5px solid #ff7b29;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-
-    .contact {
-        text-align: center;
-        background: #2c3e50;
-        color: white;
-    }
-
-    .contact a {
-        color: #ffb37b;
-        text-decoration: none;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #1f2d3a;
-        color: white;
-    }
-</style>
+<script defer src="script.js"></script>
 </head>
+
 <body>
 
-<header>
-    <div class="hero">
-        <h1>Happy Paws Dog Walking</h1>
-        <p>Reliable, caring, and fun dog walking services for your best friend.</p>
-        <a href="#contact" class="btn">Book a Walk</a>
+<button id="themeToggle">🌙</button>
+
+<nav>
+
+    <div class="logo">
+    <img src="logo.png" alt="Cora The Explorer Logo">
+    <span>Cora The Explorer's Adventures</span>
+</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Booking</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+
+    <div class="glass-card">
+        <h1>Professional Dog Walking & Pet Sitting</h1>
+
+        <p>
+            Safe, reliable and loving walks for your best friend.
+            Fully insured and trusted by local pet owners.
+        </p>
+
+        <a href="#booking" class="btn">
+            Book A Walk
+        </a>
     </div>
+
 </header>
 
-<section>
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>30-Minute Walk</h3>
-            <p>Perfect for a quick exercise break and fresh air.</p>
+<section id="about" class="fade-up">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            🦴
+            <h3>Experienced</h3>
+            <p>Text</p>
         </div>
-        <div class="card">
-            <h3>60-Minute Walk</h3>
-            <p>Extended adventure for energetic dogs.</p>
+
+        <div class="feature">
+            ❤️
+            <h3>Trusted</h3>
+            <p>Text</p>
         </div>
-        <div class="card">
-            <h3>Puppy Visits</h3>
-            <p>Potty breaks, playtime, and companionship.</p>
+
+        <div class="feature">
+            🌳
+            <h3>Adventure Walks</h3>
+            <p>Text</p>
         </div>
-        <div class="card">
-            <h3>Group Walks</h3>
-            <p>Social and fun walks with other friendly dogs.</p>
-        </div>
+
     </div>
+
 </section>
 
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        At Happy Paws Dog Walking, we treat every dog like family.
-        Our experienced walkers provide safe, enjoyable walks tailored
-        to your dog's needs and personality.
-    </p>
-</section>
+<section id="services" class="fade-up">
 
-<section>
-    <h2>What Pet Owners Say</h2>
-    <div class="testimonials">
-        <div class="testimonial">
-            <p>"My dog gets so excited when Happy Paws arrives. Fantastic service!"</p>
-            <strong>- Sarah M.</strong>
+    <h2>About Me!</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Text</h3>
+            <p>Text</p>
         </div>
-        <div class="testimonial">
-            <p>"Reliable, professional, and genuinely caring. Highly recommended."</p>
-            <strong>- James T.</strong>
-        </div>
-        <div class="testimonial">
-            <p>"The daily updates and photos are wonderful. My dog loves every walk."</p>
-            <strong>- Emily R.</strong>
-        </div>
+
     </div>
+
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to schedule a walk?</p>
-    <p>Email: hello@happypaws.com</p>
-    <p>Phone: (555) 123-4567</p>
-    <p><a href="#">Request a Free Consultation</a></p>
+<section id="pricing" class="fade-up">
+
+    <h2>Pricing</h2>
+
+    <div class="pricing-grid">
+
+        <div class="price-card featured">
+            <h3>1 Hour Walk</h3>
+            <div class="price">£30</div>
+            <p>Most popular option.</p>
+        </div>
+
+        <div class="price-card">
+            <h3>30 Min Walk</h3>
+            <div class="price">£15</div>
+            <p>Perfect for puppies and seniors.</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Group Walk</h3>
+            <div class="price">£15</div>
+            <p>Text</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Difficult Dog Walk</h3>
+            <div class="price">£20</div>
+            <p>Text</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Pet Sitting</h3>
+            <div class="price">£35/Night</div>
+            <p>Text</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Pet Visit</h3>
+            <div class="price">£15 Pop In</div>
+            <p>Text</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="fade-up">
+
+    <h2>Happy Dogs</h2>
+
+    <div class="gallery">
+
+        <img src="HeaderImage(1).jpg" alt="">
+        <img src="HeaderImage(1).jpg" alt="">
+        <img src="HeaderImage(1).jpg" alt="">
+        <img src="HeaderImage(1).jpg" alt="">
+        <img src="HeaderImage(1).jpg" alt="">
+
+    </div>
+
+</section>
+
+<section class="testimonials fade-up">
+
+    <h2>Client Reviews</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
+            “Our Labrador absolutely loves every walk.”
+            <span>Sarah & Max</span>
+        </div>
+
+        <div class="testimonial">
+            “Professional, friendly and dependable.”
+            <span>James & Bella</span>
+        </div>
+
+        <div class="testimonial">
+            “The best dog walker we've ever used.”
+            <span>Emma & Charlie</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="map-section fade-up">
+
+    <h2>Service Area</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9906.228407855106!2d-1.718009071624626!3d51.63132181870665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871486181116b2f%3A0xc29900ff32e69e5f!2sHighworth%2C%20Swindon!5e0!3m2!1sen!2suk!4v1781355867924!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section id="booking" class="fade-up">
+
+    <h2>Book A Walk</h2>
+
+    <form class="booking-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Email Address">
+
+        <input type="tel" placeholder="Phone Number">
+
+        <input type="text" placeholder="Dog Name">
+
+        <select>
+            <option>Select Service</option>
+            <option>30 Min Dog Walk - £15</option>
+            <option>60 Min Dog Walk - £30</option>
+            <option>Group Walk - £15</option>
+            <option>Difficult Dog Walk - £20</option>
+            <option>Pet Sitting - £35/Night</option>
+            <option>Pet Visit - £15 Pop In</option>
+        </select>
+
+        <textarea placeholder="Tell us about your dog"></textarea>
+
+        <button type="submit">
+            Submit Booking Request
+        </button>
+
+    </form>
+
 </section>
 
 <footer>
-    <p>&copy; 2026 Happy Paws Dog Walking. All rights reserved.</p>
+
+    <h3>Cora The Explorer's Adventures</h3>
+
+    <p>Fully Insured • Level 3 Pet First Aid and CPR Trained • Local Independent Business</p>
+
+    <div class="socials">
+        <a href="">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
 </footer>
 
 </body>
