@@ -1,16 +1,18 @@
 :root{
---primary:#29b36a;
---dark:#121212;
---light:#ffffff;
---card:rgba(255,255,255,.12);
---text:#222;
---bg:#f8fafc;
+   --primary:#29b36a;
+    --dark:#121212;
+    --light:#ffffff;
+    --card:#ffffff;
+    --text:#222;
+    --bg:#f8fafc;
+    --nav-bg:rgba(255,255,255,.8);
 }
 
 .dark{
---text:#f1f1f1;
---bg:#111827;
---card:rgba(255,255,255,.08);
+    --text:#ffffff;
+    --bg:#111827;
+    --card:#1f2937; /* dark card color */
+    --nav-bg:rgba(17,24,39,.8);
 }
 
 *{
@@ -38,7 +40,7 @@ top:0;
 display:flex;
 justify-content:space-between;
 padding:20px 8%;
-background:rgba(255,255,255,.8);
+background:var(--nav-bg);
 backdrop-filter:blur(15px);
 z-index:1000;
 }
@@ -133,7 +135,7 @@ gap:25px;
 .card,
 .price-card,
 .testimonial{
-background:white;
+background:var(--card);
 padding:30px;
 border-radius:24px;
 box-shadow:0 15px 35px rgba(0,0,0,.08);
